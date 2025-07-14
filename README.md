@@ -81,3 +81,4 @@ On Bukkit:
 ```bash
 /flashcmd say Hello via Velocity!
 /flc list
+/flashcmd [command]
