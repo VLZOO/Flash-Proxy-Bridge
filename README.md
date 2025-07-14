@@ -44,7 +44,7 @@ Each folder contains a standalone Gradle-based Java project, ready to build and 
 - Gradle 7+
 - Compatible with:
 - Velocity API 3.1.1+
-- Bukkit / Spigot 1.13+
+- Bukkit / Spigot 1.8+
 
 ### 🙌 Credits
 - Developed by VLZO
