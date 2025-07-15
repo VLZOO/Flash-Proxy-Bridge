@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+
+group = 'me.vahidreza'
+version = '1.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://repo.velocitypowered.com/snapshots/'
+        metadataSources { mavenPom(); artifact() }
+    }
+    maven {
+        url = 'https://repo.velocitypowered.com/releases/'
+        metadataSources { mavenPom(); artifact() }
+    }
+}
+
+dependencies {
+    compileOnly 'com.velocitypowered:velocity-api:3.4.0-SNAPSHOT'
+    annotationProcessor 'com.velocitypowered:velocity-api:3.4.0-SNAPSHOT'
+
+    compileOnly 'com.google.guava:guava:31.1-jre'
+    compileOnly 'javax.inject:javax.inject:1'
+}
+
+tasks.withType(Jar).configureEach {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes 'Main-Class': 'me.vahidreza.flash.FlashVelocity'
+    }
+}

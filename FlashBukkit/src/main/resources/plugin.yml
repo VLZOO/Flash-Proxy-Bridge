@@ -1,0 +1,11 @@
+name: Flash Bukkit
+version: 1.0
+main: me.vahidreza.flash.FlashBukkit
+description: A plugin that sends proxy commands to Velocity
+author: VLZO
+
+commands:
+  flashcmd:
+    description: Sends a command to Velocity
+  flc:
+    description: Shortcut for flashcmd

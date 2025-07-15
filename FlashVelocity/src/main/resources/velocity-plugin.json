@@ -1,0 +1,7 @@
+{
+  "id": "flash",
+  "name": "FlashVelocity",
+  "version": "1.0",
+  "main": "me.vahidreza.flash.FlashVelocity",
+  "authors": ["VLZO"]
+}
