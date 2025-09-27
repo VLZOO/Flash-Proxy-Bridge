@@ -1,0 +1,14 @@
+name: FlashBukkit
+version: 1.2
+main: com.vahidreza.flash.FlashBukkit
+api-version: 1.13
+author: VLZO
+commands:
+  flc:
+    description: Send a command to Velocity
+    usage: /<command> <cmd>
+    permission: flash.use
+permissions:
+  flash.use:
+    description: Allows use of /flc
+    default: op

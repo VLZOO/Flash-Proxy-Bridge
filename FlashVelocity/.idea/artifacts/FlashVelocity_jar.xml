@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FlashVelocity:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FlashVelocity_jar</output-path>
+    <root id="archive" name="FlashVelocity.jar">
+      <element id="module-output" name="FlashVelocity" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,98 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>me.vahidreza</groupId>
+    <artifactId>FlashVelocity</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <name>FlashVelocity</name>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>velocity-snapshots</id>
+            <url>https://repo.velocitypowered.com/snapshots/</url>
+        </repository>
+        <repository>
+            <id>velocity-releases</id>
+            <url>https://repo.velocitypowered.com/releases/</url>
+        </repository>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- Velocity API -->
+        <dependency>
+            <groupId>com.velocitypowered</groupId>
+            <artifactId>velocity-api</artifactId>
+            <version>3.4.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Annotation processor for Velocity -->
+        <dependency>
+            <groupId>com.velocitypowered</groupId>
+            <artifactId>velocity-api</artifactId>
+            <version>3.4.0-SNAPSHOT</version>
+            <scope>provided</scope>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!-- Guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>31.1-jre</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- javax.inject -->
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Compiler plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <release>17</release>
+                </configuration>
+            </plugin>
+
+            <!-- Jar plugin for manifest -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifestEntries>
+                            <Main-Class>com.vahidreza.flash.FlashVelocity</Main-Class>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
