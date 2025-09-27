@@ -1,7 +1,12 @@
 {
   "id": "flash",
   "name": "FlashVelocity",
+<<<<<<< HEAD
   "version": "1.1",
   "main": "com.vahidreza.flash.FlashVelocity",
+=======
+  "version": "1.0",
+  "main": "me.vahidreza.flash.FlashVelocity",
+>>>>>>> 61d16135ffa0011b4d52bf0705555f0c844d9ab0
   "authors": ["VLZO"]
 }

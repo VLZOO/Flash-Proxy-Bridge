@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: FlashBukkit
 version: 1.1
 main: com.vahidreza.flash.FlashBukkit
@@ -12,3 +13,16 @@ permissions:
   flash.use:
     description: Allows use of /flc
     default: op
+=======
+name: Flash Bukkit
+version: 1.0
+main: me.vahidreza.flash.FlashBukkit
+description: A plugin that sends proxy commands to Velocity
+author: VLZO
+
+commands:
+  flashcmd:
+    description: Sends a command to Velocity
+  flc:
+    description: Shortcut for flashcmd
+>>>>>>> 61d16135ffa0011b4d52bf0705555f0c844d9ab0
