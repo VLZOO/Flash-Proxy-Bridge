@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FlashBukkit:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FlashBukkit_jar</output-path>
+    <root id="archive" name="FlashBukkit.jar">
+      <element id="module-output" name="FlashBukkit" />
+    </root>
+  </artifact>
+</component>
